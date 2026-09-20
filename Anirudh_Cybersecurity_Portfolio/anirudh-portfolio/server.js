@@ -23,5 +23,5 @@ app.post('/api/contact', (req, res) => {
   res.json({ ok: true, message: 'Thanks! Your message has been received.' });
 });
 
-app.get('/(.*)', (req, res) => res.sendFile(path.join(__dirname, 'public', 'index.html')));
+app.use((req, res) => res.sendFile(path.join(__dirname, 'public', 'index.html')));
 app.listen(PORT, () => console.log(`Portfolio running on http://localhost:${PORT}`));
