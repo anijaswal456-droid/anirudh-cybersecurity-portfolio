@@ -1,0 +1,8 @@
+{
+  "name": "anirudh-cybersecurity-portfolio",
+  "version": "1.0.0",
+  "description": "Professional cybersecurity student portfolio for Anirudh Jaswal",
+  "main": "server.js",
+  "scripts": {"start": "node server.js", "dev": "node --watch server.js"},
+  "dependencies": {"express": "^5.1.0"}
+}
